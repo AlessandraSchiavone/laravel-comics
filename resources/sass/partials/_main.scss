@@ -1,0 +1,71 @@
+.series{
+    position:relative;
+    background-color: $mainColor;
+    .btn{
+        color:white;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: $brandColor;
+    }
+    .btn-current{
+        position:absolute;
+        top:-28px;
+        font-size: 28px;
+        padding:10px 20px; 
+    }
+    .btn-load{
+        cursor: pointer;
+        position:absolute;
+        right:50%;
+        bottom:4%;
+        transform: translateX(50%);
+        font-size: 13px;
+        padding:10px 50px;
+    }
+    .series-cont{
+        padding:60px 0px;
+        position:relative;
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+        width: calc(100% / 6);
+        padding:10px;
+        
+            .img-cont{
+            height:180px;
+            overflow: hidden; 
+            }
+            .text{
+                padding:20px 0px;
+                font-size:15px;
+                color:white;
+                text-transform: uppercase;
+            }
+        }
+    }  
+}
+.buy{
+    background-color:$brandColor;
+    height: 150px;
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            padding:5px;
+            height:55px;
+        }
+        span{
+            font-size: 15px;
+            padding:0px 5px;
+            color:white;
+            text-transform: uppercase;
+        }
+    }
+}
